@@ -1,57 +1,114 @@
-body {
-  display: flex;
-  background-color: white;
-  color: white;
-  font-family: "Roboto", sans-serif;
-  flex-direction: column;
-  margin: 0;
-}
 
-.image {
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-  width: 300px;
-}
-.about {
-  display: flex;
-  margin-top: 0px;
-}
-.text-content {
-  background-color: #e5e7eb;
-  font-size: 36px;
-}
+    body {
+        background-color: white;
+        color: white;
+        display: flex;
+        font-family: "Roboto", sans-serif;
+        flex-direction: column;
+        margin: auto;
+        border: 2px solid red;
+    }
 
-.footer.advertisement {
-  background-color: #3882f6;
-  font-size: 24px;
-  text-align: center;
-  padding: 10px;
-  margin-top: 10px;
-}
+    .image {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        width: 300px;
+        border: 2px solid red;
+    }
 
-.footer,
-.home,
-.header {
-  background-color: #1f2937;
-  font-size: 24px;
-  text-align: center;
-  padding: 10px;
-  margin-top: 10px;
-}
+    img {
+        display: flex;
+        height: auto;
+        width: 100px;
+        border: 2px solid red;
+    }
 
-button {
-  background-color: #3882f6;
-  color: white;
-  border-color: white;
-}
+    .about {
+        display: flex;
+        margin-top: 0px;
+        color: #1f2937;
+        border: 2px solid red;
+        flex: none;
+    }
 
+    .content {
+        flex-grow: 1;
+        padding: 10px 40px;
+        border: 2px solid red;
+    }
 
-a{
-  color: white;
-  text-decoration: none;
-}
+    .text-content {
+        background-color: #e5e7eb;
+        font-style: italic;
+        color: #1f2937;
+        font-size: 36px;
+        font-weight: 300;
+        justify-content: center;
+        align-self: center;
+        padding: 80px;
+        border: 2px solid red;
+    }
 
-ul{
-    list-style-type: none;
-}
+    .footer.advertisement {
+        background-color: #3882f6;
+        font-size: 24px;
+        text-align: center;
+        padding: 20px 40px;
+        margin-top: 10px;
+        border-radius: 10px; /* Add this line to get rounded corners */
+        flex: 0 1 0;
+        align-items: center;
+        border: 2px solid red;
+    }
+
+    .footer,
+    .home,
+    header {
+        background-color: #1f2937;
+        display: flex; /* Add this line to make the parent a flex container */
+        border: 2px solid red;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        border: 2px solid red;
+    }
+
+    button {
+        background-color: #3882f6;
+        color: white;
+        all: unset;
+        border: 2px solid red;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+        border: 2px solid red;
+    }
+
+    ul {
+        list-style-type: none;
+        border: 2px solid red;
+    }
+
+    button {
+        border-color: white;
+        border: 2px solid;
+        border-radius: 10px;
+        padding: 0px 30px;
+        border: 2px solid red;
+    }
+
+    h1.content.home {
+        font-size: 48px;
+        border: 2px solid red;
+    }
+
+    footer {
+        justify-content: center;
+        border: 2px solid red;
+    }
+
