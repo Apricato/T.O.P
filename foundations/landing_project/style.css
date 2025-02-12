@@ -7,11 +7,20 @@
   font-family: "Roboto", sans-serif;
 }
 
+
+
 button{
     all:unset;
     background-color: #3882F6;
     border-radius: 5px;
     padding: 5px 25px;
+}
+
+
+.holder{
+    display: flex;
+    flex-direction: column;
+    flex:1 1 100vh;
 }
 
 /*  HEADER - NAVBAR*/
@@ -76,6 +85,8 @@ section.main article{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
 .about h3{
@@ -91,30 +102,28 @@ section.main article{
   align-self: center;
 }
 
+
 .species{
     display:flex;
     align-items: baseline;
     justify-content: center;
-    padding-left: 15%;
-    padding-right: 15%;
     gap: 10px;
     flex:0 1 auto;
     min-width: 200px;
 }
+
 
 .species p {
   color: gray;
   font-size: 14px;
   align-self: center;
   text-align: center;
+  gap: 10px;
 }
 
 .info {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding-left: 10%;
-  padding-right: 10%;
+  flex-direction: column;
 }
 
 /* PHRASE */
@@ -137,12 +146,47 @@ section.main article{
 
  #author{
     font-weight: 900;
-    font-size: 16px;
+    font-size: 20px;
     align-self: flex-end;
     color: #1f2937;
  }
 
 /*  ADVERTISEMENT */
+
+.advertisement {
+  display: flex;
+  align-items: center;
+  height: 30vh;
+
+  padding-left: 15%;
+  padding-right: 15%;
+
+}
+
+.ad{
+    display: flex;
+    background-color: #3882F6;
+    justify-content: space-around;
+    border-radius:8px;
+    padding: 20px 20px;
+    width: 60vh;  
+    flex:1 1 60vh;
+}
+
+.ad button{
+    border: 3px solid #E5E7EB  ;
+    align-self: center;
+    
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 0 1 300px;
+}
+
+
 
 /*  FOOTER */
 
@@ -151,4 +195,7 @@ footer {
   align-items: center;
   justify-content: center;
   background-color: #1f2937;
+   height: 8vh;
 }
+
+
